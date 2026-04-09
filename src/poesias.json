@@ -1,0 +1,47 @@
+[
+  {
+    "id": "p1",
+    "imagem": "/imagemP/P1.jpg",
+    "titulo": "Eterno Amor",
+    "descricao": "Te amarei além do tempo na brisa de um sonho",
+    "categoria": "poesias",
+    "botao": "VER MAIS POESIAS"
+  },
+  {
+    "id": "p2",
+    "imagem": "/imagemP/P2.jpg",
+    "titulo": "Noite e Solidão",
+    "descricao": "Na solidão da noite, ouço o sussurro da saudade...",
+    "categoria": "poesias",
+    "botao": "VER MAIS POESIAS"
+  },
+  {
+    "id": "p3",
+    "imagem": "/imagemP/P3.jpg",
+    "titulo": "Caminhos da Saudade",
+    "descricao": "Pelas lembranças perdidas, sigo os trilhos da saudade...",
+    "categoria": "poesias",
+    "botao": "VER MAIS POESIAS"
+  },
+  {
+    "id": "l1",
+    "imagem": "/imagemP/marcelo1.jpeg",
+    "titulo": "Versos ao Luar",
+    "categoria": "livros",
+    "botao": "CONHEÇA OS LIVROS"
+  },
+  {
+    "id": "l2",
+    "imagem": "/imagemP/marcelo2.jpeg",
+    "titulo": "Alma Poética",
+    "categoria": "livros",
+    "botao": "CONHEÇA OS LIVROS"
+  },
+  {
+    "id": "l3",
+    "imagem": "/imagemP/marcelo3.jpeg",
+    "titulo": "Memórias em Verso",
+    "categoria": "livros",
+    "botao": "CONHEÇA OS LIVROS"
+  }
+]

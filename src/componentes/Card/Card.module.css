@@ -1,0 +1,53 @@
+.card_categoria {
+  position: relative;
+  width: 220px;
+  height: 270px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+  flex-shrink: 0;
+}
+
+.card_categoria_imagem {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card_categoria_overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.08) 20%,
+    rgba(0, 0, 0, 0.28) 55%,
+    rgba(0, 0, 0, 0.75) 100%
+  );
+}
+
+.card_categoria_conteudo {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px 12px;
+  text-align: center;
+  color: #fff;
+}
+
+.card_categoria_titulo {
+  font-size: 2rem;
+  font-family: "Brush Script MT", cursive;
+  font-weight: 400;
+  line-height: 1.1;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+.card_categoria_descricao {
+  font-size: 1rem;
+  line-height: 1.4;
+  font-style: italic;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.9);
+}

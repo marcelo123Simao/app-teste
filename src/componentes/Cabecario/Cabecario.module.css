@@ -1,0 +1,158 @@
+/* ===== RESET GERAL ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ===== FUNDO GERAL ===== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  background: linear-gradient(
+    180deg,
+    #0f2f57 0%,
+    #1d4f86 30%,
+    #3b78b8 65%,
+    #7eb6e6 100%
+  );
+}
+
+
+/* ===== CABEÇALHO ===== */
+.topo_poeta {
+  position: relative;
+  width: 100%;
+  min-height: 260px;
+  overflow: hidden;
+  background: linear-gradient(
+      to right,
+      rgba(8, 31, 61, 0.92) 0%,
+      rgba(18, 58, 103, 0.82) 35%,
+      rgba(67, 126, 184, 0.55) 75%,
+      rgba(140, 197, 236, 0.35) 100%
+    ),
+    url('C:\projecto_react - potfolio\src\imagem\impacto.jpeg') left center/cover no-repeat;
+}
+
+.overlay_topo {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(255,255,255,0.04),
+    rgba(0,0,0,0.12)
+  );
+  z-index: 1;
+}
+.container_topo {
+ position: relative;
+  z-index: 2;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.topo_conteudo {
+   display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 10px;
+  min-height: 260px;
+}
+
+.topo_imagem {
+ margin-left: -260px;
+  display: flex;
+  align-items: flex-end;
+}
+.topo_imagem img {
+  width: 280px;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  /* Transparência suave nas bordas */
+  -webkit-mask-image: radial-gradient(circle at center, rgba(0,0,0,1) 68%, rgba(0,0,0,0.65) 82%, rgba(0,0,0,0) 100%);
+  mask-image: radial-gradient(circle at center, rgba(0,0,0,1) 68%, rgba(0,0,0,0.65) 82%, rgba(0,0,0,0) 100%);
+}
+.topo_texto {
+  flex: 1;
+  padding-bottom: 28px;
+}
+
+.topo_texto h1 {
+ margin: 0 0 5px;
+  font-size: 52px;
+  font-family: "Brush Script MT", cursive;
+  font-weight: normal;
+  line-height: 1;
+  color: #f7f2e8;
+}
+.subtitulo {
+  margin-bottom: 18px;
+  font-size: 12px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: #eadfc7;
+}
+
+
+/* ===== MENU DO CABEÇALHO ===== */
+.menu_topo {
+  position: relative;
+  z-index: 2;
+  background: rgba(8, 33, 68, 0.58);
+  border-top: 1px solid rgba(255,255,255,0.10);
+  border-bottom: 1px solid rgba(255,255,255,0.10);
+  /*backdrop-filter: blur(2px);*/
+  padding: 10px 0;
+}
+
+.menu_topo ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu_topo ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+
+.menu_topo ul li a:hover {
+  color: #d8c59a;
+}
+
+/* ===== RESPONSIVO DO CABEÇALHO ===== */
+@media (max-width: 768px) {
+  .topo_conteudo {
+     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 0;
+  }
+  .topo_imagem {
+    margin-left: 0;
+  }
+  .topo_imagem img {
+    width: 220px;
+  }
+
+  .topo_texto h1 {
+    font-size: 42px;
+  }
+
+  .menu_topo ul {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+}

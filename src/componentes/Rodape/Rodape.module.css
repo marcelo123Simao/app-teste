@@ -1,0 +1,63 @@
+.rodape {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
+              url("fundo-ceu.jpeg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 40px 20px;
+}
+
+.rodape_container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.rodape_contato h3 {
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.rodape_contato p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.rodape_contato span {
+  color: #ddd;
+}
+
+.rodape_frase {
+  max-width: 400px;
+  text-align: right;
+  font-style: italic;
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+/* Linha decorativa no topo */
+.rodape::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: rgba(255,255,255,0.3);
+  margin-bottom: 20px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .rodape_container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .rodape_frase {
+    text-align: center;
+    margin-top: 20px;
+  }
+}

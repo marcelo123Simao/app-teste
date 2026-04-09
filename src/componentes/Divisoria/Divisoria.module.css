@@ -1,0 +1,28 @@
+.divisoria {
+  width: 100%;
+  height: 80px;
+  background-image: url("fundo-ceu.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.divisoria::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(20, 60, 120, 0.25);
+}
+
+.divisoria::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 90%;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+}

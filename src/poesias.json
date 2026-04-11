@@ -1,45 +1,45 @@
 [
   {
     "id": "p1",
-    "imagem": "/imagemP/P1.jpg",
+    "imagem": "/imagemP/PN-1.png",
     "titulo": "Eterno Amor",
-    "descricao": "Te amarei além do tempo na brisa de um sonho",
+    "descricao": "Te amarei além do tempo, onde o infinito encontra a eternidade do sentir, e cada batida do coração ecoa o teu nome como promessa que nunca se desfaz Porque alguns sentimentos não passam… eles permanecem para sempre no coração.",
     "categoria": "poesias",
     "botao": "VER MAIS POESIAS"
   },
   {
     "id": "p2",
-    "imagem": "/imagemP/P2.jpg",
+    "imagem": "/imagemP/P-2.jpg",
     "titulo": "Noite e Solidão",
-    "descricao": "Na solidão da noite, ouço o sussurro da saudade...",
+    "descricao": "Na solidão da noite, ouço o sussurro da alma e o eco dos pensamentos perdidos, onde cada silêncio revela aquilo que o dia tenta esconder Ainda assim, é nesse vazio que muitas vezes nascem as reflexões mais sinceras e os sentimentos mais verdadeiros.",
     "categoria": "poesias",
     "botao": "VER MAIS POESIAS"
   },
   {
     "id": "p3",
-    "imagem": "/imagemP/P3.jpg",
+    "imagem": "/imagemP/P-3.jpg",
     "titulo": "Caminhos da Saudade",
-    "descricao": "Pelas lembranças perdidas, sigo os trilhos da saudade...",
+    "descricao": "Pelas lembranças perdidas, sigo os trilhos da saudade, onde cada passo é uma memória viva e cada memória é um abraço que o tempo não apagou Em cada passo imaginado, a saudade relembra que o que foi vivido ainda vive dentro de nós.",
     "categoria": "poesias",
     "botao": "VER MAIS POESIAS"
   },
   {
     "id": "l1",
-    "imagem": "/imagemP/marcelo1.jpeg",
+    "imagem": "/imagemP/L-1.jpg",
     "titulo": "Versos ao Luar",
     "categoria": "livros",
     "botao": "CONHEÇA OS LIVROS"
   },
   {
     "id": "l2",
-    "imagem": "/imagemP/marcelo2.jpeg",
+    "imagem": "/imagemP/L-2.jpg",
     "titulo": "Alma Poética",
     "categoria": "livros",
     "botao": "CONHEÇA OS LIVROS"
   },
   {
     "id": "l3",
-    "imagem": "/imagemP/marcelo3.jpeg",
+    "imagem": "/imagemP/L-3.jpg",
     "titulo": "Memórias em Verso",
     "categoria": "livros",
     "botao": "CONHEÇA OS LIVROS"

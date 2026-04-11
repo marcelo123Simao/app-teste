@@ -1,34 +1,71 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Styles from "./Cabecario.module.css";
-  function Cabecario() {
-    return (
-    <header className={Styles.topo_poeta}>
-  <div className={Styles.overlay_topo}></div>
 
-  <div className={Styles.container_topo}>
-    <div className={Styles.topo_conteudo}>
-      <div className={Styles.topo_imagem}>
-        <img src="./imagem/banner.webp" alt="Ricardo Almeida" />
-      </div>
+const estilo = {
+  backgroundImage:
+    "linear-gradient(rgba(8, 24, 58, 0.82), rgba(20, 48, 105, 0.88)), url('/imagem/fundo-cinema.jpeg')",
+  backgroundSize: "cover",
+  backgroundPosition: "center",
+};
 
-      <div className={Styles.topo_texto}>
-     <h1>Marcelo Simão_O"Poeta"</h1>
-    <p className={Styles.subtitulo}> ------------ POETA ----------- </p>
+function Cabecario() {
+  const location = useLocation();
 
-        <nav className={Styles.menu_topo}>
-          <ul>
-            
-            <li><Link to="/">HOME</Link></li>
-            <li><Link to="/Sobre mim">SOBRE MIM</Link></li>
-            <li><Link to="/Poesias">POESIAS</Link></li>
-            <li><Link to="/Livros">LIVROS</Link></li>
-           <li><Link to="/Contacto">CONTACTO</Link></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
+  const menuItems = [
+    { nome: "Home", caminho: "/" },
+    { nome: "Sobre Mim", caminho: "/sobreMim" },
+    { nome: "Poesias", caminho: "/poesias" },
+    { nome: "Livros", caminho: "/livros" },
+    { nome: "Contacto", caminho: "/contacto" },
+  ];
+
+  return (
+    <header className={Styles.topoPoeta} style={estilo}>
+      <div className={Styles.overlayTopo}></div>
+
+      <div className={Styles.containerTopo}>
+        <div className={Styles.topoConteudo}>
+          <div className={Styles.topoImagem}>
+            <img src="/imagem/expo.jpeg" alt="Marcelo Simão" />
+          </div>
+
+          <div className={Styles.topoTexto}>
+            <h1>Marcelo Simão</h1>
+            <span className={Styles.nomeArtistico}>O Poeta</span>
+
+            <div className={Styles.linhaDecorativa}></div>
+
+            <nav className={Styles.menuTopo}>
+              <ul>
+                {menuItems.map((item) => (
+                  <li key={item.caminho}>
+                    <Link
+                      to={item.caminho}
+                      className={
+                        location.pathname === item.caminho
+                          ? Styles.linkActivo
+                          : ""
+                      }
+                    >
+                      {item.nome}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+
+            <div className={Styles.textoApresentacao}>
+              <p>
+                Olá,sou <strong>Marcelo Simão_O"Poeta"</strong>, um poeta apaixonado pela beleza das
+                palavras, pela profundidade dos sentimentos e pela arte de
+                transformar emoções em versos.
+              </p>
+            </div>
+          </div>
         </div>
-        </header>
-    )
+      </div>
+    </header>
+  );
 }
+
 export default Cabecario;

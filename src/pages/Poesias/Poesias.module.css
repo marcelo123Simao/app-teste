@@ -1,0 +1,112 @@
+.poesiasPage {
+  padding: 80px 0;
+}
+
+/* título */
+.titulo {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #1b4f9c;
+  margin-bottom: 60px;
+}
+
+/* grid moderno */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+/* card */
+.card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  overflow: hidden;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.18);
+}
+
+/* imagem */
+.imgBox {
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+}
+
+.imgBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.card:hover .imgBox img {
+  transform: scale(1.1);
+}
+
+/* conteúdo */
+.cardBody {
+  padding: 20px;
+}
+
+.cardBody h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #0f172a;
+}
+
+.cardBody p {
+  font-size: 0.95rem;
+  color: #6b7280;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* botão */
+.btn {
+  display: block;
+  text-align: center;
+  padding: 12px;
+  border-radius: 12px;
+
+  background: #0d1b2a;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: #1b263b;
+}
+
+/* botão final */
+.footerBtn {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.footerBtn a {
+  display: inline-block;
+  padding: 14px 35px;
+  border-radius: 50px;
+
+  background: #4e73bc;
+  color: #fff;
+
+  font-weight: 700;
+  text-decoration: none;
+}
+ .footerBtn a:hover {
+  transform: scale(1.1);
+}

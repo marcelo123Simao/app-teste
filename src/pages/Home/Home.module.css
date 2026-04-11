@@ -1,0 +1,43 @@
+.fraseSection {
+  padding: 100px 0;
+}
+
+.fraseBox {
+  text-align: center;
+  padding: 60px 40px;
+  border-radius: 24px;
+
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+
+  position: relative;
+  overflow: hidden;
+}
+
+.fraseDetalhe {
+  display: block;
+  width: 120px;
+  height: 3px;
+  margin: 0 auto 25px auto;
+
+  background: linear-gradient(to right, transparent, #bcd1ff, transparent);
+  border-radius: 10px;
+}
+
+.fraseTitulo {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #1b4f9c;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.fraseTexto {
+  font-size: 1.1rem;
+  color: #4b5563;
+}

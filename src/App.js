@@ -1,4 +1,3 @@
-
 import AppRoutes from "./routes";
 
 function App() {
@@ -6,4 +5,5 @@ function App() {
      <AppRoutes />
   );
 }
+
 export default App;

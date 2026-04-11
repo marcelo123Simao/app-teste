@@ -1,50 +1,124 @@
+
 .categoria {
-  text-align: center;
-  padding: 40px 20px;
+  width: 100%;
+  padding: 90px 20px;
+  position: relative;
 }
 
-.cards_container {
+.cabecalhoCategoria {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 50px;
+}
+
+.linha {
+  flex: 1;
+  max-width: 220px;
+  height: 2px;
+  background: linear-gradient(to right, transparent, rgba(255,255,255,0.7), transparent);
+}
+
+.textosCabecalho {
+  text-align: center;
+}
+
+.textosCabecalho h2 {
+  color: #4c71bc;
+  font-size: 3rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.sub {
+  color: #35476d;
+  font-size: 1.65rem;
+  font-style: italic;
+  margin: 0;
+}
+
+.cardsContainer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+}
+
+.areaBotao {
   display: flex;
   justify-content: center;
-  gap: 20px;
-  margin: 20px 0;
-  flex-wrap: wrap;
+  margin-top: 45px;
 }
 
-.card_poesia {
-  position: relative;
-  width: 180px;
-  height: 240px;
-  overflow: hidden;
-  border-radius: 10px;
-}
-
-.card_poesia img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.8));
-}
-
-.conteudo {
-  position: absolute;
-  bottom: 10px;
-  color: white;
-  text-align: center;
-  width: 100%;
-  padding: 10px;
-}
-
-.btn_ver_mais {
-  background: #3b5b7a;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 8px;
+.btnVerMais {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 250px;
+  padding: 15px 30px;
+  border-radius: 14px;
+  background: linear-gradient(to bottom, #2e4ac6, #4c71bc);
+  color: #fff;
   text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: 0.3s ease;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+.btnVerMais:hover {
+  transform: translateY(-4px);
+  background: linear-gradient(to bottom, #8db4ff, #5a82d3);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.35);
+}
+
+@media (max-width: 992px) {
+  .cardsContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .textosCabecalho h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .categoria {
+    padding: 70px 15px;
+  }
+
+  .cabecalhoCategoria {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .linha {
+    max-width: 120px;
+  }
+
+  .textosCabecalho h2 {
+    font-size: 2rem;
+  }
+
+  .sub {
+    font-size: 1rem;
+  }
+
+  .cardsContainer {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .btnVerMais {
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+  }
 }

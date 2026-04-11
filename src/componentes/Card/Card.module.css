@@ -1,53 +1,113 @@
-.card_categoria {
+.cardCategoria {
   position: relative;
-  width: 220px;
-  height: 270px;
   overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
-  flex-shrink: 0;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  height: 100%;
 }
 
-.card_categoria_imagem {
+.cardCategoria:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.45);
+}
+
+.cardImagemWrapper {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+
+.cardCategoriaImagem {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
+  transition: transform 0.5s ease;
 }
 
-.card_categoria_overlay {
+.cardCategoria:hover .cardCategoriaImagem {
+  transform: scale(1.08);
+}
+
+.cardCategoriaOverlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.08) 20%,
-    rgba(0, 0, 0, 0.28) 55%,
-    rgba(0, 0, 0, 0.75) 100%
+    to top,
+    rgba(8, 18, 44, 0.95),
+    rgba(8, 18, 44, 0.2),
+    transparent
   );
 }
 
-.card_categoria_conteudo {
+.cardCategoriaConteudo {
   position: absolute;
-  inset: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 16px 12px;
-  text-align: center;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  padding: 24px 20px;
   color: #fff;
 }
 
-.card_categoria_titulo {
-  font-size: 2rem;
-  font-family: "Brush Script MT", cursive;
-  font-weight: 400;
-  line-height: 1.1;
-  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.9);
+.cardTipo {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 6px 12px;
+  border-radius: 30px;
+  font-size: 0.75rem;
+  margin-bottom: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
-.card_categoria_descricao {
-  font-size: 1rem;
-  line-height: 1.4;
-  font-style: italic;
-  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.9);
+.cardCategoriaTitulo {
+  font-size: 2rem;
+  font-family: 'Great Vibes', cursive;
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+
+.cardCategoriaDescricao {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #e7ebf7;
+  margin-bottom: 18px;
+}
+
+.cardBotao {
+  border: none;
+  background: linear-gradient(to right, #7ea2e8, #4e73bc);
+  color: white;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+  width: 100%;
+}
+
+.cardBotao:hover {
+  background: linear-gradient(to right, #8eb4ff, #5b81d0);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .cardImagemWrapper {
+    height: 300px;
+  }
+
+  .cardCategoriaTitulo {
+    font-size: 1.7rem;
+  }
+
+  .cardCategoriaDescricao {
+    font-size: 0.9rem;
+  }
 }

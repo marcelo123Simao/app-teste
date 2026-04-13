@@ -14,11 +14,11 @@ function Poesias() {
     setPoesias(apenasPoesias);
   }, []);
 
-  const abrirWhatsApp = (titulo) => {
+  /*const abrirWhatsApp = (titulo) => {
     const numero = "244951456711";
     const mensagem = `Olá, quero saber mais sobre a poesia: ${titulo}`;
     return `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
-  };
+  };*/
 
   return (
     <>
@@ -51,7 +51,7 @@ function Poesias() {
             ))}
           </div>
 
-          <div className={Styles.footerBtn}>
+          {/* <div className={Styles.footerBtn}>
             <a
               href="https://wa.me/244951456711"
               target="_blank"
@@ -59,7 +59,7 @@ function Poesias() {
             >
               ✍️ SOLICITAR PEDIDO NO WHATSAPP
             </a>
-          </div>
+          </div> */}
 
         </div>
       </main>

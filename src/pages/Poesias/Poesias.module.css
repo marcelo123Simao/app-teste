@@ -110,3 +110,18 @@
  .footerBtn a:hover {
   transform: scale(1.1);
 }
+.botaoPedido {
+  display: inline-block;
+  padding: 14px 25px;
+  background-color: #25d366;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.botaoPedido:hover {
+  background-color: #1ebe5d;
+  transform: scale(1.05);
+}

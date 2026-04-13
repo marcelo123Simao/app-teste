@@ -31,7 +31,7 @@ function Rodape() {
 
           <div className={Styles.infoItem}>
             <FaPhoneAlt />
-            <span>(+244) 999 999 999</span>
+            <span>(+244) 928 607 944 / 951 456 711</span>
           </div>
 
           <div className={Styles.infoItem}>

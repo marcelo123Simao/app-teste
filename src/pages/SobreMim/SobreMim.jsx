@@ -39,13 +39,13 @@ function SobreMim() {
             </div>
 
             <div className={Styles.marqueeBox}>
-              <marquee behavior="scroll" direction="left" scrollamount="6">
-                📞 Contacto: +244 951 456 711 &nbsp;&nbsp; | &nbsp;&nbsp;
-                📧 Email: simaowork123@gmail.com &nbsp;&nbsp; | &nbsp;&nbsp;
-                📍 Luanda, Angola &nbsp;&nbsp; | &nbsp;&nbsp;
-                ✍️ Poeta & Escritor Independente
-              </marquee>
-            </div>
+                <div className={Styles.marqueeContent}>
+                  📞 Contacto: +244 951 456 711 &nbsp;&nbsp; | &nbsp;&nbsp;
+                  📧 Email: simaowork123@gmail.com &nbsp;&nbsp; | &nbsp;&nbsp;
+                  📍 Luanda, Angola &nbsp;&nbsp; | &nbsp;&nbsp;
+                  ✍️ Poeta & Escritor Independente
+                </div>
+              </div>
           </div>
         </div>
       </div>

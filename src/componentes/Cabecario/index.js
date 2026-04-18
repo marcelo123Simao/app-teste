@@ -26,7 +26,7 @@ function Cabecario() {
       <div className={Styles.containerTopo}>
         <div className={Styles.topoConteudo}>
           <div className={Styles.topoImagem}>
-            <img src="/imagem/expo.jpeg" alt="Marcelo Simão" />
+            <img src="/imagem/navbar.jpeg" alt="Marcelo Simão" />
           </div>
 
           <div className={Styles.topoTexto}>

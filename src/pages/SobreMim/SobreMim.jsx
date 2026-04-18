@@ -11,7 +11,7 @@ function SobreMim() {
         <div className={Styles.sobreWrapper}>
           <div className={Styles.imagemArea}>
             <div className={Styles.imagemBox}>
-              <img src="/imagem/logo-sobre.jpg" alt="Sobre mim" />
+              <img src="/imagem/sobre.jpeg" alt="Sobre mim" />
             </div>
           </div>
 
